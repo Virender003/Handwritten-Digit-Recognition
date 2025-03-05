@@ -6,7 +6,6 @@ import tensorflow as tf
 
 # Load the trained model
 model = tf.keras.models.load_model("mnist_model.h5")
-'''-----------------------------------UI Part (ahb)----------------------------------------'''
 class DigitRecognizerApp:
     def __init__(self, root):
         self.root = root
@@ -111,7 +110,6 @@ class DigitRecognizerApp:
         self.draw.rectangle([0, 0, 280, 290], fill="white")
         self.output_label.config(text="")
         
-#-----------------------------------------------------SUMIT'S PART-------------------------------------'''
     def predict_digit(self):
         # Resize and preprocess image
         image_resized = self.image.resize((28, 28))
